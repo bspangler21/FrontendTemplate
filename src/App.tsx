@@ -1,20 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import FantasyFootballTeam from "./pages/FantasyFootballTeam";
+import Header from "./pageComponents/Header";
 
 function App() {
-  return (
+	return (
 		<BrowserRouter>
-			{/* <Header /> */}
+			<Header />
 			<Routes>
-				<Route path="/fantasy-football" Component={Worries}></Route>
-				
+				<Route path="/" Component={FantasyFootballTeam}></Route>
+				<Route
+					path="/fantasy-football"
+					Component={FantasyFootballTeam}
+				></Route>
 			</Routes>
 			{/* <Footer /> */}
 		</BrowserRouter>
-  );
+	);
 }
 
-export default App
+export default App;
