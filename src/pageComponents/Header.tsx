@@ -1,33 +1,30 @@
-import { Link } from "react-router-dom";
-import { mergeStyleSets } from "@fluentui/react";
+import header from "../styles/header.module.css";
+import utilstyles from "../styles/utilStyles.module.css";
 
-const classNames = mergeStyleSets({
-	navBar: {
-		justifyContent: "center",
-		alignItems: "center",
-		flexDirection: "row",
-		width: "100vw",
-		paddingBottom: "20px",
-		maxWidth: "100%",
-		textAlign: "center",
+const pages = [
+	{
+		name: "Home",
+		link: "/",
 	},
-	container: {
-		display: "flex",
-		flexDirection: "row",
-		placeItems: "center",
-		justifyContent: "center",
-		width: "100vw",
+	{
+		name: "Fantasy Football",
+		link: "/fantasy-football",
 	},
-});
+	{
+		name: "Placeholder",
+		link: "/placeholder",
+	},
+];
 
 const Header = () => {
 	return (
-		<div className={classNames.navBar}>
-			<nav>
-				<Link to="/">Home</Link>
-				{" | "}
-				<Link to="/fantasy-football">Fantasy Football</Link>
-			</nav>
+		<div className={utilstyles.container}>
+			<div className={header.topnav}>
+				{pages.map((page) => (
+					<a href={page.link}>{page.name}</a>
+				))}
+				;
+			</div>
 		</div>
 	);
 };
