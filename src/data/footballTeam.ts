@@ -31,4 +31,34 @@ export const footballTeam: FootballPlayer[] = [
 		lastName: "Olave",
 		position: "WR",
 	},
+	{
+		id: "6",
+		firstName: "Deebo",
+		lastName: "Samuel",
+		position: "WR",
+	},
+	{
+		id: "7",
+		firstName: "Dontayvion",
+		lastName: "Wicks",
+		position: "WR",
+	},
+	{
+		id: "8",
+		firstName: "Jake",
+		lastName: "Ferguson",
+		position: "TE",
+	},
+	{
+		id: "9",
+		firstName: "Denver",
+		lastName: "Broncos",
+		position: "D/ST",
+	},
+	{
+		id: "10",
+		firstName: "Chris",
+		lastName: "Boswell",
+		position: "K",
+	},
 ];
