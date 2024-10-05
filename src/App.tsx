@@ -7,6 +7,7 @@ import FantasyFootballTeam from "./pages/FantasyFootballTeam";
 import Header from "./pageComponents/Header";
 import Home from "./pages/Home";
 import Placeholder from "./pages/Placeholder";
+import Footer from "./pageComponents/Footer";
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
 				></Route>
 				<Route path="/placeholder" Component={Placeholder}></Route>
 			</Routes>
-			{/* <Footer /> */}
+			<Footer />
 		</BrowserRouter>
 	);
 }
