@@ -1,5 +1,4 @@
 import header from "../styles/header.module.css";
-import utilstyles from "../styles/utilStyles.module.css";
 
 const pages = [
 	{
@@ -18,13 +17,11 @@ const pages = [
 
 const Header = () => {
 	return (
-		<div className={utilstyles.container}>
-			<div className={header.topnav}>
-				{pages.map((page) => (
-					<a href={page.link}>{page.name}</a>
-				))}
-				;
-			</div>
+		<div className={header.topnav}>
+			{pages.map((page) => (
+				<a href={page.link}>{page.name}</a>
+			))}
+			;
 		</div>
 	);
 };

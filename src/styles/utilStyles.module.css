@@ -1,10 +1,12 @@
 .container {
   padding: 20px;
+  height: calc(100vh - 100px);
 }
 
 .table {
   border-collapse: collapse;
   width: 80%;
+  margin: auto;
 }
 
 .th {
