@@ -19,3 +19,8 @@
   text-align: center;
   vertical-align: middle;
 }
+
+.mediumVerticalImage {
+  height: 600px;
+  width: 450px;
+}

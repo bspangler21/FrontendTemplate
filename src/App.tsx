@@ -5,17 +5,20 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FantasyFootballTeam from "./pages/FantasyFootballTeam";
 import Header from "./pageComponents/Header";
+import Home from "./pages/Home";
+import Placeholder from "./pages/Placeholder";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Header />
 			<Routes>
-				<Route path="/" Component={FantasyFootballTeam}></Route>
+				<Route path="/" Component={Home}></Route>
 				<Route
 					path="/fantasy-football"
 					Component={FantasyFootballTeam}
 				></Route>
+				<Route path="/placeholder" Component={Placeholder}></Route>
 			</Routes>
 			{/* <Footer /> */}
 		</BrowserRouter>
