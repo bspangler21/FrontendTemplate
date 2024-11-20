@@ -9,7 +9,7 @@ const playersList: FootballPlayer[] = footballTeam;
 function PlayerDetails() {
 	const { id } = useParams<{ id: string }>();
 	const [player, setPlayer] = useState<FootballPlayer | undefined>(undefined);
-	console.log(player);
+
 	function getPlayerById(id: string) {
 		console.log("id", id);
 		return playersList.find((p) => p.id === id);
