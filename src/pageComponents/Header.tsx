@@ -10,6 +10,10 @@ const pages = [
 		link: "/fantasy-football",
 	},
 	{
+		name: "Cards",
+		link: "/cards",
+	},
+	{
 		name: "Placeholder",
 		link: "/placeholder",
 	},

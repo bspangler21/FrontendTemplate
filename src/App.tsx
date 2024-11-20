@@ -8,6 +8,7 @@ import Header from "./pageComponents/Header";
 import Home from "./pages/Home";
 import Placeholder from "./pages/Placeholder";
 import Footer from "./pageComponents/Footer";
+import Cards from "./pages/Cards";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 					path="/fantasy-football"
 					Component={FantasyFootballTeam}
 				></Route>
+				<Route path="/cards" Component={Cards}></Route>
 				<Route path="/placeholder" Component={Placeholder}></Route>
 			</Routes>
 			<Footer />

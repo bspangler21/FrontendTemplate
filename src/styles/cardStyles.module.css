@@ -1,0 +1,20 @@
+.horizontalContainer {
+  display: flex;
+  flex-flow: wrap;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.cardContainer {
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cardVerticalContainer {
+  height: 175px;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: #878585 0px 6px 9px 0px;
+}
