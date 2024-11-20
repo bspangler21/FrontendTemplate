@@ -14,16 +14,11 @@ const Cards = () => {
 			<div className={utilStyles.container}>
 				<div className={cardStyles.horizontalContainer}>
 					{playersList.map((p) => (
-						<div key={p.id} className={cardStyles.cardContainer}>
-							<div className={cardStyles.cardVerticalContainer}>
-								<img
-									src="https://wallpapercave.com/wp/wp13483150.jpg"
-									style={{ height: "100px" }}
-									alt="Player image"
-								></img><br></br>
-								<label>
+						<div key={p.id} className={cardStyles.card}>
+							<div className={cardStyles.w3CardContainer}>
+								<p>
 									{p.firstName} {p.lastName}
-								</label>
+								</p>
 								<p>{p.position}</p>
 							</div>
 						</div>
