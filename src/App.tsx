@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Placeholder from "./pages/Placeholder";
 import Footer from "./pageComponents/Footer";
 import Cards from "./pages/Cards";
+import PlayerDetails from "./pages/PlayerDetails";
 
 function App() {
 	return (
@@ -22,6 +23,10 @@ function App() {
 				></Route>
 				<Route path="/cards" Component={Cards}></Route>
 				<Route path="/placeholder" Component={Placeholder}></Route>
+				<Route
+					path="/player-detail/:id"
+					Component={PlayerDetails}
+				></Route>
 			</Routes>
 			<Footer />
 		</BrowserRouter>
