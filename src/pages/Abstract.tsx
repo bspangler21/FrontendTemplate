@@ -37,6 +37,7 @@ const helpItems: HelpItem[] = [
 	},
 ];
 
+//-- Reference = https://www.frontendpractice.com/projects/abstract
 function Abstract() {
 	return (
 		<>
