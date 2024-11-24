@@ -10,11 +10,12 @@ import Placeholder from "./pages/Placeholder";
 import Footer from "./pageComponents/Footer";
 import Cards from "./pages/Cards";
 import PlayerDetails from "./pages/PlayerDetails";
+import Abstract from "./pages/Abstract";
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Header />
+			{/* <Header /> */}
 			<Routes>
 				<Route path="/" Component={Home}></Route>
 				<Route
@@ -27,8 +28,9 @@ function App() {
 					path="/player-detail/:id"
 					Component={PlayerDetails}
 				></Route>
+				<Route path="/abstract" Component={Abstract}></Route>
 			</Routes>
-			<Footer />
+			{/* <Footer /> */}
 		</BrowserRouter>
 	);
 }

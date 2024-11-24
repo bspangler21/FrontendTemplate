@@ -1,0 +1,42 @@
+.hero {
+  background-color: lightblue;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  width: 100vw; /*calc(100vw - 20px);*/
+  margin-top: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.search {
+  padding-top: 0px;
+  margin-top: 0px;
+  width: 300px;
+  height: 30px;
+}
+
+.horizontalContainer {
+  display: flex;
+  flex-flow: wrap;
+  /* flex-direction: column; */
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.helpContainer {
+  display: flex;
+  flex-direction: column;
+  width:300px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.helpHeading {
+  font-size: 1.5em;
+  font-weight: bold;
+}
