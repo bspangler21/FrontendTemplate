@@ -15,8 +15,10 @@ h2 {
 .search {
   padding-top: 0px;
   margin-top: 0px;
-  width: 300px;
-  height: 30px;
+  width: 400px;
+  height: 35px;
+  box-shadow: 0 0 9px 2px #878585;
+  border: 1px solid #000;
 }
 
 .horizontalContainer {
