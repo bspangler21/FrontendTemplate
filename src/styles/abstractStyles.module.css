@@ -42,6 +42,7 @@ h2 {
   /* Allow container to fill grid cell */
   height: auto;
   vertical-align: middle;
+  text-align: left;
 }
 
 .helpHeading {
@@ -49,6 +50,7 @@ h2 {
   font-weight: bold;
   margin-bottom: 0;
   padding-bottom: 0;
+  
 }
 
 .helpDescription {

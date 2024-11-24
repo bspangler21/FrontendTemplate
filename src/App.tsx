@@ -15,7 +15,6 @@ import Abstract from "./pages/Abstract";
 function App() {
 	return (
 		<BrowserRouter>
-			{/* <Header /> */}
 			<Routes>
 				<Route path="/" Component={Home}></Route>
 				<Route
@@ -30,7 +29,6 @@ function App() {
 				></Route>
 				<Route path="/abstract" Component={Abstract}></Route>
 			</Routes>
-			{/* <Footer /> */}
 		</BrowserRouter>
 	);
 }
