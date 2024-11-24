@@ -43,7 +43,6 @@ function Abstract() {
 			<Header />
 			<div className={abstractStyles.hero}>
 				<h2>How can we help?</h2>
-				<label htmlFor="abstractsearch"></label>
 				<input
 					name="Search"
 					id="abstractsearch"
@@ -59,6 +58,8 @@ function Abstract() {
 						<p className={abstractStyles.helpHeading}>
 							{item.title}
 						</p>
+						<p>{item.description}</p>
+						<a className={abstractStyles.learnMore}>Learn More</a>
 					</div>
 				))}
 			</div>

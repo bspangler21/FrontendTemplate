@@ -20,23 +20,41 @@ h2 {
 }
 
 .horizontalContainer {
-  display: flex;
-  flex-flow: wrap;
-  /* flex-direction: column; */
-  width: auto;
-  height: auto;
-  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Creates 2 equal columns */
+  gap: 20px;
+  /* Adds spacing between items */
+  width: 100%;
+  max-width: 1200px;
+  /* Optional: limits maximum width */
+  margin: 0 auto;
+  /* Centers the container */
+  padding: 20px;
 }
 
 .helpContainer {
   display: flex;
   flex-direction: column;
-  width:300px;
+  width: 100%;
+  /* Allow container to fill grid cell */
   height: auto;
   vertical-align: middle;
 }
 
 .helpHeading {
-  font-size: 1.5em;
+  font-size: 16px;
   font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.helpDescription {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.learnMore {
+  font-size: 14px;
 }
