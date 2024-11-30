@@ -17,6 +17,10 @@ const pages = [
 		name: "Placeholder",
 		link: "/placeholder",
 	},
+	{
+		name: "Abstract",
+		link: "/abstract",
+	},
 ];
 
 const Header = () => {

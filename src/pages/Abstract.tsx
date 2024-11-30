@@ -1,4 +1,3 @@
-import Header from "../pageComponents/Header";
 import abstractStyles from "../styles/abstractStyles.module.css";
 
 type HelpItem = {
@@ -41,7 +40,6 @@ const helpItems: HelpItem[] = [
 function Abstract() {
 	return (
 		<>
-			<Header />
 			<div className={abstractStyles.hero}>
 				<h2>How can we help?</h2>
 				<input
