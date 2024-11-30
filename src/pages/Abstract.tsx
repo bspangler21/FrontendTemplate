@@ -40,14 +40,18 @@ const helpItems: HelpItem[] = [
 function searchHelpItems(searchText: string): HelpItem[] {
 	console.log(searchText);
 	console.log(helpItems);
-	return helpItems.filter((item) =>
-		item.title.toLowerCase().includes(searchText.toLowerCase())
+	return helpItems.filter(
+		(item) =>
+			item.title.toLowerCase().includes(searchText.toLowerCase()) ||
+			item.description.toLowerCase().includes(searchText.toLowerCase())
 	);
 }
 
 //-- Reference = https://www.frontendpractice.com/projects/abstract
 function Abstract() {
-	// const [searchText, setSearchText] = useState<string>("");
+	const [searchText, setSearchText] = useState<string>("");
+
+	const filteredItems = searchHelpItems(searchText);
 
 	return (
 		<>
@@ -58,11 +62,11 @@ function Abstract() {
 					type="search"
 					id="abstractsearch"
 					className={abstractStyles.search}
-					onChange={(e) => searchHelpItems(e.target.value)}
+					onChange={(e) => setSearchText(e.target.value)}
 				></input>
 			</div>
 			<div className={abstractStyles.horizontalContainer}>
-				{helpItems.map((item) => (
+				{filteredItems.map((item) => (
 					<div
 						className={abstractStyles.helpContainer}
 						key={item.title}
