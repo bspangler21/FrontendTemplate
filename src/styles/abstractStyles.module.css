@@ -1,0 +1,64 @@
+.hero {
+  background-color: lightblue;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  width: 100vw; /*calc(100vw - 20px);*/
+  margin-top: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.search {
+  padding-top: 0px;
+  margin-top: 0px;
+  width: 400px;
+  height: 35px;
+  box-shadow: 0 0 9px 2px #878585;
+  border: 1px solid #000;
+}
+
+.horizontalContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Creates 2 equal columns */
+  gap: 20px;
+  /* Adds spacing between items */
+  width: 100%;
+  max-width: 1200px;
+  /* Optional: limits maximum width */
+  margin: 0 auto;
+  /* Centers the container */
+  padding: 20px;
+}
+
+.helpContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* Allow container to fill grid cell */
+  height: auto;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.helpHeading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  
+}
+
+.helpDescription {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.learnMore {
+  font-size: 14px;
+}

@@ -4,17 +4,15 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FantasyFootballTeam from "./pages/FantasyFootballTeam";
-import Header from "./pageComponents/Header";
 import Home from "./pages/Home";
 import Placeholder from "./pages/Placeholder";
-import Footer from "./pageComponents/Footer";
 import Cards from "./pages/Cards";
 import PlayerDetails from "./pages/PlayerDetails";
+import Abstract from "./pages/Abstract";
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Header />
 			<Routes>
 				<Route path="/" Component={Home}></Route>
 				<Route
@@ -27,8 +25,8 @@ function App() {
 					path="/player-detail/:id"
 					Component={PlayerDetails}
 				></Route>
+				<Route path="/abstract" Component={Abstract}></Route>
 			</Routes>
-			<Footer />
 		</BrowserRouter>
 	);
 }
