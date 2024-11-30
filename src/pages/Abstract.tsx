@@ -1,3 +1,4 @@
+import { useState } from "react";
 import abstractStyles from "../styles/abstractStyles.module.css";
 
 type HelpItem = {
@@ -38,12 +39,15 @@ const helpItems: HelpItem[] = [
 
 //-- Reference = https://www.frontendpractice.com/projects/abstract
 function Abstract() {
+	const [searchText, setSearchText] = useState<string>("");
+
 	return (
 		<>
 			<div className={abstractStyles.hero}>
 				<h2>How can we help?</h2>
 				<input
 					name="Search"
+					type="search"
 					id="abstractsearch"
 					className={abstractStyles.search}
 				></input>
