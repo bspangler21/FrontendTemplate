@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, createContext } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
@@ -44,17 +44,20 @@ function applyScrollbarStyles() {
 	}
 }
 
-
-
 // Call the function to apply styles
 applyScrollbarStyles();
+
+export const UserContext = createContext("");
+const currentUser = "Brett Spangler";
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<QueryClientProvider client={queryClient}>
-			<Header />
-			<App />
-			<Footer />
+			<UserContext.Provider value={currentUser}>
+				<Header />
+				<App />
+				<Footer />
+			</UserContext.Provider>
 		</QueryClientProvider>
 	</StrictMode>
 );
