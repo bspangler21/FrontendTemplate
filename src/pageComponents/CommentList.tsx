@@ -7,6 +7,7 @@ interface CommentListProps {
 }
 
 function CommentList({ comments }: CommentListProps) {
+  console.log("# of comments: ", comments.length);
 	return (
 		<>
 			<div className={utilStyles.container}>
