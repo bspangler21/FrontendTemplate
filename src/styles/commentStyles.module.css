@@ -1,0 +1,10 @@
+.commentContainer {
+  padding: 20px;
+  margin: 10px;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.SearchBox {
+  margin: auto;
+  width: 80%;
+}

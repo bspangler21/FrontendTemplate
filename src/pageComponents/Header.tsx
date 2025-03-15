@@ -23,7 +23,7 @@ const pages = [
 	},
 	{
 		name: "Comments",
-		link: "/Comments",
+		link: "/comments",
 	},
 ];
 
