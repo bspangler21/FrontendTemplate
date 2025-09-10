@@ -40,6 +40,8 @@ function Form() {
 						className={utilStyles.textInput}
 					/>
 				</div>
+			</div>
+			<div className={formStyles.formRow}>
 				<div className={formStyles.formInputContainer}>
 					<label className={utilStyles.label}>Label</label>
 					<input
@@ -72,6 +74,8 @@ function Form() {
 						className={utilStyles.textInput}
 					/>
 				</div>
+			</div>
+			<div className={formStyles.formRow}>
 				<div className={formStyles.formInputContainer}>
 					<label className={utilStyles.label}>Label</label>
 					<input
@@ -96,21 +100,23 @@ function Form() {
 						className={utilStyles.textInput}
 					/>
 				</div>
-				<div className={formStyles.formInputContainer}>
-					<label className={utilStyles.label}>Label</label>
-					<input
-						type="text"
-						placeholder="Enter text"
-						className={utilStyles.textInput}
-					/>
-				</div>
-				<div className={formStyles.formInputContainer}>
-					<label className={utilStyles.label}>Label</label>
-					<input
-						type="text"
-						placeholder="Enter text"
-						className={utilStyles.textInput}
-					/>
+				<div className={formStyles.formRow}>
+					<div className={formStyles.formInputContainer}>
+						<label className={utilStyles.label}>Label</label>
+						<input
+							type="text"
+							placeholder="Enter text"
+							className={utilStyles.textInput}
+						/>
+					</div>
+					<div className={formStyles.formInputContainer}>
+						<label className={utilStyles.label}>Label</label>
+						<input
+							type="text"
+							placeholder="Enter text"
+							className={utilStyles.textInput}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
