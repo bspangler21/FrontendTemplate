@@ -2,7 +2,7 @@ import { footballTeam } from "../data/footballTeam";
 import { FootballPlayer } from "../types/FootballPlayer";
 // import { TableHeader } from "../types/TableHeader";
 import utilStyles from "../styles/utils.module.css";
-import cardStyles from "../styles/cardStyles.module.css";
+import cardStyles from "../styles/cards.module.css";
 import { useNavigate } from "react-router-dom";
 
 const playersList: FootballPlayer[] = footballTeam;
