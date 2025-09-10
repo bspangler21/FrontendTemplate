@@ -1,5 +1,5 @@
 import { useState } from "react";
-import abstractStyles from "../styles/abstractStyles.module.css";
+import abstractStyles from "../styles/abstract.module.css";
 
 type HelpItem = {
 	title: string;

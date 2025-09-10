@@ -9,6 +9,7 @@ import Placeholder from "./pages/Placeholder";
 import Cards from "./pages/Cards";
 import PlayerDetails from "./pages/PlayerDetails";
 import Abstract from "./pages/Abstract";
+import Comments from "./pages/Comments";
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 					Component={PlayerDetails}
 				></Route>
 				<Route path="/abstract" Component={Abstract}></Route>
+				<Route path="/comments" Component={Comments}></Route>
 			</Routes>
 		</BrowserRouter>
 	);
