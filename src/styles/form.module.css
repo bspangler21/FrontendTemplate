@@ -1,0 +1,11 @@
+.responsiveForm {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
