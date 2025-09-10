@@ -1,7 +1,7 @@
 import { footballTeam } from "../data/footballTeam";
 import { FootballPlayer } from "../types/FootballPlayer";
 import { TableHeader } from "../types/TableHeader";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../styles/util.module.css";
 
 const playersList: FootballPlayer[] = footballTeam;
 

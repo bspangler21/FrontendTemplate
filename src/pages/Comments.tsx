@@ -2,8 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import CommentList from "../pageComponents/CommentList";
 import { ICommentItem } from "../interfaces/ICommentItem";
-import utilStyles from "../styles/utils.module.css";
-import commentStyles from "../styles/comments.module.css";
+import utilStyles from "../styles/util.module.css";
+import commentStyles from "../styles/comment.module.css";
 import {
 	ISearchBoxStyles,
 	IStackTokens,

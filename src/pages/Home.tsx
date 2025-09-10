@@ -1,4 +1,4 @@
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../styles/util.module.css";
 import { useContext } from "react";
 import { UserContext } from "../main";
 

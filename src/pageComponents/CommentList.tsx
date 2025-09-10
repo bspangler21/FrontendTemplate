@@ -1,5 +1,5 @@
 import { memo } from "react";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../styles/util.module.css";
 import { ICommentItem } from "../interfaces/ICommentItem";
 
 interface CommentListProps {
