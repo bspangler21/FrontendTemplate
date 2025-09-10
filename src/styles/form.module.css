@@ -3,29 +3,37 @@ form {
   margin: 20px auto;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .formRow {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  height: 50px;
-  width: 100%;
-  padding: 5px;
+  height: 80px;
+  /* width: 100%; */
+  /* padding: 5px; */
+  /* margin: 5px; */
 
 }
 
 .formInputContainer {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
   height: 100%;
   width: 300px;
+  padding: 5px;
+  margin: 5px;
 }
 
 @media (max-width: 800px) {
   .form {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .formRow {
+    flex-flow: column nowrap;
   }
 }
