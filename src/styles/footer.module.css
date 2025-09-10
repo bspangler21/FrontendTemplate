@@ -5,6 +5,7 @@
     position: fixed;
     left: 0px;
     bottom: 0;
-    width: calc(100vw - var(--scrollbar-width));
+    /* width: calc(100vw - var(--scrollbar-width)); */
+    width: 100%;
     height: var(--footer-height);
 }

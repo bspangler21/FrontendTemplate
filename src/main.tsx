@@ -13,8 +13,11 @@ initializeIcons();
 const queryClient = new QueryClient();
 
 function isScrollbarVisible() {
-	return document.documentElement.scrollHeight > window.innerHeight;
-	console.log(`Scrollbar visible: ${isScrollbarVisible}`);
+	const isVisible =
+		document.documentElement.scrollHeight > window.innerHeight;
+	console.log(`Scrollbar visible: ${isVisible}`);
+	return isVisible;
+	
 }
 
 function getScrollbarWidth() {
@@ -26,6 +29,7 @@ function getScrollbarWidth() {
 	const inner = document.createElement("div");
 	container.appendChild(inner);
 	const scrollbarWidth = container.offsetWidth - inner.offsetWidth;
+	console.log("scrollbarWidth", scrollbarWidth);
 	document.body.removeChild(container);
 
 	console.log(`Scrollbar width: ${scrollbarWidth}px`);
@@ -44,8 +48,16 @@ function applyScrollbarStyles() {
 	}
 }
 
-// Call the function to apply styles
-applyScrollbarStyles();
+// Apply styles after DOM is ready and on resize
+function initializeScrollbarHandling() {
+    applyScrollbarStyles();
+    window.addEventListener('resize', applyScrollbarStyles);
+    // Also check after content loads
+    window.addEventListener('load', applyScrollbarStyles);
+}
+
+// Call after a short delay to ensure content is rendered
+setTimeout(initializeScrollbarHandling, 100);
 
 export const UserContext = createContext("");
 const currentUser = "Brett Spangler";
