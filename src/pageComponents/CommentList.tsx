@@ -1,5 +1,5 @@
 import { memo } from "react";
-import utilStyles from "../styles/utilStyles.module.css";
+import utilStyles from "../styles/utils.module.css";
 import { ICommentItem } from "../interfaces/ICommentItem";
 
 interface CommentListProps {
@@ -7,7 +7,7 @@ interface CommentListProps {
 }
 
 function CommentList({ comments }: CommentListProps) {
-  console.log("# of comments: ", comments.length);
+	console.log("# of comments: ", comments.length);
 	return (
 		<>
 			<div className={utilStyles.container}>

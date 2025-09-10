@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import CommentList from "../pageComponents/CommentList";
 import { ICommentItem } from "../interfaces/ICommentItem";
-import utilStyles from "../styles/utilStyles.module.css";
+import utilStyles from "../styles/utils.module.css";
 import commentStyles from "../styles/commentStyles.module.css";
 import {
 	ISearchBoxStyles,
@@ -33,9 +33,10 @@ function Comments() {
 			originalComments.current.filter((comment) => {
 				if (!searchText) return true;
 				const searchLower = searchText.toLowerCase();
-        return (
-          comment.body.toLowerCase().includes(searchLower) || comment.name.toLowerCase().includes(searchLower)
-        )
+				return (
+					comment.body.toLowerCase().includes(searchLower) ||
+					comment.name.toLowerCase().includes(searchLower)
+				);
 			})
 		);
 	};
