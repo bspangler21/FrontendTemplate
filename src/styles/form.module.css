@@ -1,11 +1,13 @@
 .responsiveForm {
   display: flex;
-  flex-direction: row;
-  margin: auto;
+  margin: 20px auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 @media (max-width: 800px) {
-  .flex-container {
+  .responsiveForm {
     flex-direction: column;
   }
 }
