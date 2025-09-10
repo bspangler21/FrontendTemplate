@@ -28,13 +28,14 @@
 }
 
 .textInput {
-  /* height: 40px; */
-  height: 50%;
+  height: 40px;
+  /* height: 50%; */
   width: 300px;
 }
 
 .label {
-  height: 50%;
+  /* height: 50%; */
+  height: 40px;
 }
 
 .mediumVerticalImage {
