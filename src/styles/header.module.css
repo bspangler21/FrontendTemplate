@@ -1,17 +1,19 @@
 .topnav {
   overflow: hidden;
   background-color: #000000;
-  /* width: calc(100vw - var(--scrollbar-width)); */
-  /* width: 100%; */
+  /* Remove fixed height and let content determine height */
+  /* height: var(--header-height); */
+  min-height: var(--header-height);
   padding-bottom: 10px;
-  /* margin: 10px; */
-  /* position: fixed;
-  z-index: 0;
-
+  /* Add padding-top for mobile safety */
+  padding-top: env(safe-area-inset-top, 0);
+  /* Ensure it starts at the very top */
+  margin: 0;
+  position: relative;
   top: 0;
-  left: 0; */
+  left: 0;
   width: 100%;
-  height: var(--header-height);
+  box-sizing: border-box;
 }
 
 .topnav a {
@@ -22,10 +24,23 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
- 
 }
 
 .topnav a:hover {
   background-color: #878585;
   color: #ffffff;
+}
+
+/* Add mobile-specific styles */
+@media (max-width: 768px) {
+  .topnav {
+    /* Ensure proper spacing on mobile */
+    padding-top: max(env(safe-area-inset-top, 0), 10px);
+  }
+
+  .topnav a {
+    /* Adjust padding for mobile touch targets */
+    padding: 12px 14px;
+    font-size: 16px;
+  }
 }
