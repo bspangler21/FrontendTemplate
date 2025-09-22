@@ -1,33 +1,29 @@
-form {
+.form {
   display: flex;
   margin: 20px auto;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-flow: row wrap;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
 }
 
 .formRow {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  height: 90px;
-  /* width: 100%; */
-  /* padding: 5px; */
-  /* margin: 5px; */
+  height: 80px;
+  width: 100%;
+  padding: 5px;
 
 }
 
 .formInputContainer {
-  /* margin-top: 5px; */
-  /* margin-bottom: 5px; */
   height: 100%;
   width: 300px;
-  padding: 5px;
-  margin: 5px;
+  margin: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 680px) {
   .form {
     flex-direction: column;
     justify-content: center;
@@ -35,5 +31,17 @@ form {
 
   .formRow {
     flex-flow: column nowrap;
+    align-items: stretch;
+    height: auto;
   }
+
+  .formInputContainer {
+    width: 100%;
+    max-width: none;
+    margin: 5px 0;
+  }
+
+    .formInputContainer input, .formInputContainer label {
+      width: 100%;
+    }
 }
