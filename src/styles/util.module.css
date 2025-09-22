@@ -2,12 +2,16 @@
   padding: 20px;
   height: calc(100vh - var(--header-height) - var(--footer-height));
   /* padding-bottom: (var(--footer-height) + 2rem); */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin: 0;
 }
 
 .table {
   border-collapse: collapse;
   width: 80%;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .th {
@@ -21,6 +25,17 @@
   padding: 4px;
   text-align: center;
   vertical-align: middle;
+}
+
+.textInput {
+  height: 40px;
+  /* height: 50%; */
+  width: 300px;
+}
+
+.label {
+  /* height: 50%; */
+  height: 40px;
 }
 
 .mediumVerticalImage {

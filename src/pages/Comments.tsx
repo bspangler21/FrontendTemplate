@@ -21,8 +21,8 @@ function Comments() {
 		fetch("https://jsonplaceholder.typicode.com/comments")
 			.then((response) => response.json())
 			.then((comments) => {
-				setComments(comments);
-				originalComments.current = comments;
+				setComments(comments.slice(0, 20));
+				originalComments.current = comments.slice(0, 20);
 			});
 	}, []);
 

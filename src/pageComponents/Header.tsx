@@ -25,6 +25,10 @@ const pages = [
 		name: "Comments",
 		link: "/comments",
 	},
+	{
+		name: "Form",
+		link: "/form",
+	}
 ];
 
 const Header = () => {

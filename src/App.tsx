@@ -10,6 +10,7 @@ import Cards from "./pages/Cards";
 import PlayerDetails from "./pages/PlayerDetails";
 import Abstract from "./pages/Abstract";
 import Comments from "./pages/Comments";
+import Form from "./pages/Form";
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 				></Route>
 				<Route path="/abstract" Component={Abstract}></Route>
 				<Route path="/comments" Component={Comments}></Route>
+				<Route path="/form" Component={Form}></Route>
 			</Routes>
 		</BrowserRouter>
 	);
