@@ -1,4 +1,4 @@
-import utilStyles from "../styles/util.module.css";
+// import utilStyles from "../styles/util.module.css";
 import { useContext } from "react";
 import { UserContext } from "../main";
 
@@ -7,7 +7,7 @@ const Home = () => {
 	console.log(`Current user: ${currentUser}`);
 	return (
 		<>
-			<div className={utilStyles.container}>
+			<div className="bg-red-500 p-8 text-white text-4xl">
 				<p>This is the home screen</p>
 			</div>
 		</>

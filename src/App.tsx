@@ -1,22 +1,23 @@
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
-import "./App.css";
+// import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FantasyFootballTeam from "./pages/FantasyFootballTeam";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Placeholder from "./pages/Placeholder";
 import Cards from "./pages/Cards";
 import PlayerDetails from "./pages/PlayerDetails";
 import Abstract from "./pages/Abstract";
 import Comments from "./pages/Comments";
 import Form from "./pages/Form";
+import TailwindTest from "./pages/TailwindTest";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" Component={Home}></Route>
+				<Route path="/" Component={TailwindTest}></Route>
 				<Route
 					path="/fantasy-football"
 					Component={FantasyFootballTeam}
