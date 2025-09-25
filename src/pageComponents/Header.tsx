@@ -1,4 +1,4 @@
-import header from "../styles/header.module.css";
+// import header from "../styles/header.module.css";
 
 const pages = [
 	{
@@ -33,11 +33,15 @@ const pages = [
 
 const Header = () => {
 	return (
-		<div className={header.topnav}>
+		<div className="z-1 bg-primary text-secondary flex flex-row justify-start items-center p-4 gap-4 min-h-[50px]">
 			{pages.map((page) => (
-				<a href={page.link}>{page.name}</a>
+				<a
+					href={page.link}
+					className="hover:text-accent text-secondary"
+				>
+					{page.name}
+				</a>
 			))}
-			;
 		</div>
 	);
 };

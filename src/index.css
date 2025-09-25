@@ -17,6 +17,11 @@
   --footer-height: 50px;
 }
 
+@theme {
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
