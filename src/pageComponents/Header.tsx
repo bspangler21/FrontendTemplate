@@ -37,9 +37,8 @@ const Header = () => {
 			{pages.map((page) => (
 				<a
 					href={page.link}
-					className="hover:text-accent text-secondary"
 				>
-					{page.name}
+					<span className="text-secondary">{page.name}</span>
 				</a>
 			))}
 		</div>
