@@ -33,7 +33,7 @@ const pages = [
 
 const Header = () => {
 	return (
-		<div className="z-1 bg-primary text-secondary flex flex-row justify-start items-center p-4 gap-4 min-h-[50px]">
+		<div className="z-1 bg-primary text-secondary flex flex-row justify-start items-center p-4 gap-4 min-h-[50px] w-screen">
 			{pages.map((page) => (
 				<a
 					href={page.link}
